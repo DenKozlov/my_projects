@@ -1,0 +1,66 @@
+#container {
+    width: 350px;
+    height: 600px;
+    background-color: #00CCCC;
+    float: left;
+}
+
+.wrapDiv {
+    width: 355px;
+    height: 605px;
+    background-color: #FF6666;
+    float: left;
+}
+
+.blueBorder {
+    border: 2px solid #0000CC;
+}
+
+.italicStyle {
+    font-style: italic;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+#divWithButtons {
+    position: absolute;
+    left: 370px;
+}
+
+button {
+    float: left;
+    clear: left;
+    margin-bottom: 5px;
+    width: 140px;
+}
+
+#selectors {
+    position: absolute;
+    left: 520px;
+    top: 45px;
+}
+
+.hide {
+    display: none;
+}
+
+#selText {
+    position: absolute;
+    top: 170px;
+    left: 515px;
+}
+
+select {
+    float: left;
+    clear: left;
+    margin-bottom: 25px;
+}
+
+input {
+    position: absolute;
+    left: 370px;
+    top: 190px;
+    width: 135px;
+}

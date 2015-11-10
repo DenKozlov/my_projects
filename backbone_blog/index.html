@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<script type="text/template" id="article-template">
+		<header><h2><a class="blue"><%= title %></a></h2></header>
+		<p><%= descr %></p>
+		<footer><time class="light-grey"><%= publishDate %></time>&#09;<span>Author: </span><%= author %></footer>
+		<button id="edit-post">Edit</button>
+		<button id="delete-post">Delete</button>
+		<button class="delete-post-sm"></button>
+	</script>
+	<script type="text/template" id="add-post-template">
+		<legend>Add new post</legend>
+		<label>Post title: <input id="title" placeholder="Title" /></label>
+		<label>Post author: <input id="author" placeholder="Full name" /></label>
+		<label>Post:
+		<textarea rows="3" cols="35" id="content" placeholder="Input some post"></textarea></label>
+		<button id="add-post">Add post</button>
+		<button id="close">Close</button>
+		<button class="btn-close"></button>
+	</script>
+	<script type="text/template" id="show-full-post">
+		<p><%= content %></p>
+		<a href="#main">Back to Main</a>
+	</script>
+	<script src="libs/jquery-2.1.4.min.js"></script>
+	<script src="libs/underscore.js"></script>
+	<script src="libs/backbone.js"></script>
+	<script src="libs/backbone.localStorage-min.js"></script>
+	<script src="init.js"></script>
+	<script src="js/models/PostModel.js"></script>
+	<script src="js/views/PostView.js"></script>
+	<script src="js/collections/PostCollection.js"></script>
+	<script src="js/views/MainView.js"></script>
+	<script src="js/views/AddPostView.js"></script>
+	<script src="js/views/fullPostView.js"></script>
+	<script src="js/routers/router.js"></script>
+	<script src="run.js"></script>
+</head>
+<body>
+	<header>
+		<h1 class="site-name">My Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="#main" id="main-page">Main page</a></li>
+				<li><a href="#addpost" id="show-post-field">Add post</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+		</section>
+		<div id="message" style="opacity: 0;">
+			<span>success: </span>New post has been added!
+		</div>
+	</main>
+	<aside>
+		
+	</aside>
+	<footer>
+		
+	</footer>
+</body>
+</html>

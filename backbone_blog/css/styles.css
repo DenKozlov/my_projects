@@ -1,0 +1,160 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: royalblue;
+}
+nav ul {
+    background: lightgreen;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li > a {
+    font-size: large;
+    color: #fff;
+}
+.blue {
+    color:white;
+}
+.light-grey {
+    color:#888;
+}
+fieldset {
+    background-color: lightblue;
+    font-family: 'Lora', serif;
+    color: #0174DF;
+    border-radius: 5px;
+    margin: 10px;
+    padding-top: 20px;
+    box-shadow: 4px 4px 3px #708090;
+}
+
+fieldset label {
+    vertical-align: top;
+    margin-bottom: 10px;
+    display: block;
+
+}
+input {
+    width: 261px;
+}
+#close {
+    float: right;
+}
+legend {
+    padding: 5px 10px 5px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    background: lightblue;
+    border: 1px solid #778899;
+    width: 130px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px #708090;
+    z-index: 2;
+}
+.site-name {
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 4px 4px 3px #708090;
+}
+.btn-close, .delete-post-sm {
+    background: url('../img/error.png') no-repeat;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    font: 16px arial;
+    line-height: 1.42;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: #FA5858;
+    z-index: 2;
+}
+.delete-post-sm {
+    position: relative;
+    right: -36em;
+    top: -8.75em;
+}
+.btn-close {
+    position: relative;
+    right: -39.7em;
+    top: -9.4em;
+}
+
+.btn-close:hover, .delete-post-sm:hover {
+    color: #2E2E2E;
+}
+
+.btn-close:focus, .delete-post-sm:focus {
+    outline: 1px dotted;
+}
+article {
+    border: 1px solid #778899;
+    padding: 10px;
+    margin: 15px 15px;
+    font-family: "Palatino Linotype", Baskerville, serif;
+    box-shadow: 4px 4px 3px #708090;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+body {
+    background-color: rgb(0,191,255);
+    padding-bottom: 10px;
+    margin: 30px auto;
+    width: 760px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px #708090;
+    min-height: 100%;
+}
+html {
+    background-color: rgb(225,238,253);
+    height: 100%;
+}
+#edit-post, #delete-post {
+    font-family: "Palatino Linotype", Baskerville, serif;
+    cursor: pointer;
+    width: 5em;
+}
+
+button > span {
+    display: block;
+    text-align: center;
+    line-height: 0.5em;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.alert-box {
+    color:#555;
+    border-radius:10px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 36px;
+    margin:10px;
+}
+.alert-box span {
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.success {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    background:#e9ffd9 url('../img/success.png') no-repeat 10px 50%;
+    border:1px solid #a6ca8a;
+}
+fieldset label:after {
+    content: attr(data-error);
+    font-weight: bold;
+    color: red;
+}

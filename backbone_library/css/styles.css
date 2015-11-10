@@ -1,0 +1,25 @@
+label {
+    display: block;
+}
+.delete, .edit {
+    width: 50px;
+}
+.delete {
+    background-color: tomato;
+}
+.edit {
+    background-color: lawngreen;
+}
+fieldset > button {
+    background-color: aquamarine;
+}
+fieldset {
+    background-color: aqua;
+    width: 500px;
+}
+label.error::after {
+    content: attr(error);
+    color: red;
+    font-size: 90%;
+    padding: 2px;
+}

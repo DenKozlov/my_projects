@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Books list</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script type="text/template" id="book-item">
+        <%= author  %> <%= bookTitle %> <%= publishHouse %> <%= publishDate %>
+        <button class="edit">Edit</button>
+        <button class="delete">&#215;</button>
+    </script>
+    <script src="libs/jquery-2.1.4.min.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/backbone.js"></script>
+    <script src="init-app.js"></script>
+    <script src="js/models/book-model.js"></script>
+    <script src="js/collection/book-collection.js"></script>
+    <script src="js/views/book-collectionview.js"></script>
+    <script src="js/views/book-view.js"></script>
+    <script src="js/views/add-bookview.js"></script>
+    <script src="run.js"></script>
+</head>
+<body>
+    <fieldset id="addBook">
+        <legend>Add new book</legend>
+        <label for="author">Author: <input id="author" placeholder="Name and surname"/></label>
+        <label for="book-title">Book title: <input id="book-title"/></label>
+        <label for="publish-house">Publishing house: <input id="publish-house"/></label>
+        <label for="publish-date">Publishing date: <input type="date" id="publish-date"/></label>
+        <button id="add-book">Add Book</button>
+    </fieldset>
+</body>
+</html>
